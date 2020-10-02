@@ -6,7 +6,6 @@ const btnIncRef = document.querySelector(
 );
 let outRef = document.querySelector('#value');
 
-console.log(outRef);
 const onDecrementBtnClick = () =>
   (outRef.textContent = Number(outRef.textContent) - 1);
 const onIncrementBtnClick = () =>
