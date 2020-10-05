@@ -6,11 +6,7 @@ const onInputFocusChange = () => {
   ) {
     inputRef.classList.add('valid');
     inputRef.classList.remove('invalid');
-  }
-  if (
-    inputRef.value.length < inputRef.dataset.length ||
-    inputRef.value.length > inputRef.dataset.length
-  ) {
+  } else {
     inputRef.classList.add('invalid');
     inputRef.classList.remove('valid');
   }
